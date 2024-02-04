@@ -2,8 +2,8 @@ import java.util.Random;
 
 public class Book {
     private long id = 0;
-    final private String title;
-    final private String author;
+    private String title;
+    private String author;
     private boolean availability = true;
 
     public Book(String title, String author) {
@@ -36,7 +36,6 @@ public class Book {
         this.id = min + ((long) (random.nextDouble() * (max - min + 1)));
     }
 
-    /*
     public void setTitle(String title) {
         this.title = title;
     }
@@ -44,7 +43,6 @@ public class Book {
     public void setAuthor(String author) {
         this.author = author;
     }
-    */
 
     public void setAvailability(boolean availability) {
         this.availability = availability;
