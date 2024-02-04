@@ -4,10 +4,14 @@ import java.util.Random;
  * Represents a book in the library.
  */
 public class Book {
-    private long id = 0; // Unique identifier for the book
-    private String title; // Title of the book
-    private String author; // Author of the book
-    private boolean availability = true; // Availability status of the book
+    // Unique identifier for the book
+    private long id = 0;
+    // Title of the book
+    private String title;
+    // Author of the book
+    private String author;
+    // Availability status of the book
+    private boolean availability = true;
 
     /**
      * Constructor to create a new Book instance with the given title and author.
@@ -61,8 +65,10 @@ public class Book {
      */
     public void setId() {
         Random random = new Random();
-        long min = 1000000000L; // Minimum value for the unique identifier
-        long max = 9999999999L; // Maximum value for the unique identifier
+        // Minimum value for the unique identifier
+        long min = 1000000000L;
+        // Maximum value for the unique identifier
+        long max = 9999999999L;
         this.id = min + ((long) (random.nextDouble() * (max - min + 1)));
     }
 
